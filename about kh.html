@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ទនាក់ទំនង</title>
+    <link rel="icon" href="/img/logo/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow-x: hidden;
+            background-image: url(./img/about/imagebgaba.png);
+            font-family: Kh Battambang;
+        }
+        header {
+            height: 120px;
+            font-family: Kh Battambang;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            background-color: #013e37;
+        }
+        nav{
+            justify-content: center;
+            font-size: 25px;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px auto 0 auto;   
+        }
+        nav {
+        border: 3px solid #013e37;
+        border-radius: 5ch;
+        background-color: #013e37;
+        height: 45px;
+        width: 600px;
+        }
+        a img {
+            position: relative;
+            border: 1px hidden;
+            border-radius: 20ch;
+            position: relative;
+            top: 3px;
+
+        }
+        nav a:hover {
+            color: #fff700;
+            transform: scale(1.1);
+        }
+
+        a {
+            font-family: Kh battambang;
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 23px;
+        }
+            .container {
+            font-family: sans-serif;
+            color: aliceblue;
+            background-color: #013e37;
+            overflow: hidden;
+            margin: 0 auto;
+            top: 40px;
+            position: relative;
+            border: 5px solid black;
+            /* mask-image: linear-gradient(
+                to right, 
+                transparent,
+                #000 5%,
+                #000 95%,
+                transparent
+            ) */
+        }
+        .wrapper {
+            display: inline-flex;
+            align-items: center;
+            width: max-content;
+            animation: scroll 10s linear infinite;
+        }
+        @keyframes scroll {
+            to{
+                transform: translateX(-50%);
+            }
+        }
+                .wrapper img {
+            border: 1px none black;
+            border-radius: 50px;
+        }
+
+        .logo {
+            flex-shrink: 0;
+            margin-right: 2rem;
+        }
+        .logo img{
+            opacity: 0.8;
+        }
+        .boder {
+            top: 15px;
+            display: flex;
+            position: relative;
+            border:  4px solid #013e37;
+            box-shadow: 0 0 25px 2px #013e37;
+            margin: 0 auto;
+            width: 700px;
+        }
+        .boder img {
+            border: 5px solid #013e37;
+            border-radius: 3ch; 
+            margin-left: 25px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .boder p {
+            font-family:Kh battambang;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            font-size: 35px;
+            margin-left: 70px;
+        }
+        .boder:hover {
+        box-shadow: 0 0 10px 2px blue;
+        transform: scale(1.05);
+        }
+        .contextunline {
+            background-color: rgb(71, 71, 71);
+            margin-top: 27px;
+            height: 500px;
+        }
+        .contextunline img {
+            position: relative;
+            left: 10px;
+            top: 260px;
+            display: grid;
+            border: 1px hidden;
+            border-radius: 60px;
+        }
+        @media (max-width: 1536px) {
+            .laptop-scale-wrapper { transform: scale(0.9); width: 1536px; }
+        }
+        @media (max-width: 1440px) {
+            .laptop-scale-wrapper { transform: scale(0.85); width: 1536px; }
+        }
+        @media (max-width: 1366px) {
+            .laptop-scale-wrapper { transform: scale(0.8); width: 1536px; }
+        }
+        @media (max-width: 1280px) {
+            .laptop-scale-wrapper { transform: scale(0.75); width: 1536px; }
+        }
+        @media (max-width: 1100px) {
+            .laptop-scale-wrapper { transform: scale(0.65); width: 1536px; }
+        }
+    </style>
+    <header>
+        <p>
+        <span><img src="./img/logo/logo.jpg" style="width: 100px; position: relative; top: 15px; right: 500px; border: 2px solid black; border-radius: 5ch;">
+        </span><span style="margin-right: 80px; position: relative; bottom: 20px; ">🙏សូមស្វាគមន៏🙏</span>
+        </p>
+        <h6 style="position: relative; bottom: 95px; right: 620px; text-decoration: underline;">ជាសុខទី</h6>
+                <img src="./img/logo/setec.jpg" width="100px" style="
+        position: relative; bottom: 180px; left: 780px; border: 1px solid #013e37; border-radius: 2ch;">
+
+    </header>
+    <nav>
+        <a href="home kh.html">ទំព័រដើម </a>
+        <a href="food kh.html">អាហារ </a>
+        <a href="drink kh.html">ភេសជ្ចះ </a>
+        <a href="about kh.html">ទំនាក់ទនង </a>
+        <a href="about kh.html"><img src="./img/logo/flag kh.png" width="50px"></a>
+        <a href="about.html"><img src="./img/logo/flag eng.png" width="50px"></a>
+    </nav>     
+    <hr size="3px" style="margin-top: 10px;">
+    <div class="boder">
+        <img src="./img/ai image.jpg" width="300px" style="display: flex; margin-left: 100px; position: relative;  right: 70px;">
+        <p><b><span><img src="./img/logo/setec.jpg" width="100px" style="border: 2px solid #013e37; border-radius: 50px; display: flex; position: relative; right: 20px;">
+        <span style="position: relative;
+        font-size: 25px; font-family: Kh Battambang; right: 15px;  color: #013e37; right: 30px; bottom: 20px; text-align: center;">
+            វិទ្យាស្ថានសុីតិក <br> 
+            <span style="font-family: sans-serif; color: #013e37; position: relative; bottom: 20px;">Setec Institute<span style=" font-family:Kh battambang; display: flex; position: relative; bottom: 0px;"><br><b>បង្រៀនគ្រូ:រី វិសាល<br>ឈ្មោះ: ជាសុខទី<br><span>ក្រុម: SX16<br>Tell: 0168168168</b></span></span></span></span></span>
+    </div>
+        <div class="container">
+        <div class="wrapper">
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/fb.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tiktok.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tg1.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/fb.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tiktok.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tg1.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/fb.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tiktok.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tg1.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/fb.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tiktok.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tg1.png" width="50px" style="margin-left: 20px;"></div>
+        </div>
+    </div>
+            <div class="contextunline">
+        <img src="./img/logo/fb.png" width="50px" style="margin: 10px;"> 
+        <img src="./img/logo/tiktok.png" width="50px" style="margin: 10px;">
+        <img src="./img/logo/tg1.png" width="50px" style="margin: 10px;">
+        <img src="./img/logo/youtube.png" width="50px"style="margin: 10px;">
+        <p style="position: relative; bottom: 180px; left: 20px; font-size: 50px; color: white;">
+            CSS-Tricks ត្រូវបានគាំទ្រដោយ DigitalOcean។ <br>
+            <span style="font-size: 30px; display: flex; position: relative; left: 150px; color: orange; top: 30px;">DigitalOcean<br>
+                <span style="text-align: start; position: relative; top: 50px; right: 170px; color: rgb(160, 160, 160); font-size: 20px;">អំពីធ្វើ<br>Cloudways<br>លក្ខខណ្ឌច្បាប់ <br>ទទួលបានក្រេឌីតឥតគិតថ្លៃ!</span></span></p>
+                <p style="position: relative; bottom: 300px; left: 500px; font-size: 30px; color: orange;">CSS-Tricks<br> <span style="color: rgb(160, 160, 160); font-size: 20px; display: flex;">ទាក់ទងមកយើង <br>សរសេរអត្ថបទសម្រាប់ CSS-Tricks!</span></p>
+                <p style="position: relative; bottom: 440px; left: 850px; font-size: 30px; color: orange;">បណ្តាញសង្គម<br> <span style="color: rgb(160, 160, 160); font-size: 20px; display: flex;">RSS Feeds: RSS Feeds (រក្សាទុកជាភាសាអង់គ្លេសដដែល ព្រោះជាឈ្មោះបច្ចេកវិទ្យា)<br>CodePen <br> Mastodon <br>Bluesky</span></p>
+    </div>
+
+</body>
+</html>

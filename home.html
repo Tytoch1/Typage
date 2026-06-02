@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="/img/logo/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow: hidden;
+            background-image: url(./img/about/imagebgaba.png);
+            font-family: Kh Battambang;
+        }
+        header {
+            height: 120px;
+            font-family: Kh Battambang;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            background-color: #013e37;
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            .img-righ h6 {
+                text-align: center;
+            }
+        }
+        nav{
+            justify-content: center;
+            font-size: 25px;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px auto 0 auto;   
+        }
+        nav {
+        border: 3px solid #013e37;
+        border-radius: 5ch;
+        background-color: #013e37;
+        width: 600px;
+        }
+        nav a:hover {
+            color: #fff700;
+            transform: scale(1.09);
+        }
+        a {
+            font-family: "Playwrite GB J", cursive;
+            text-decoration: none;
+            color: aliceblue;
+        }
+        a img {
+            border: 1px hidden;
+            border-radius: 20ch;
+        }
+        .container {
+            font-family: sans-serif;
+            color: aliceblue;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-top: 75px;
+            border: 5px solid black;
+            background-color: #013e37;
+            /* mask-image: linear-gradient(
+                to right, 
+                transparent,
+                #000 5%,
+                #000 95%,
+                transparent
+            ) */
+        }
+        .wrapper {
+            display: inline-flex;
+            align-items: center;
+            width: max-content;
+            animation: scroll 10s linear infinite;
+        }
+        .wrapper img {
+            border: 1px none black;
+            border-radius: 50px;
+        }
+        @keyframes scroll {
+            to{
+                transform: translateX(-50%);
+            }
+        }
+        .logo {
+            flex-shrink: 0;
+            margin-right: 2rem;
+        }
+        .logo img{
+            opacity: 0.8;
+        }
+        .boder {
+            display: flex;
+            border:  4px solid #013e37;
+            box-shadow: 0 0 25px 2px #013e37;
+            margin: 0 auto;
+            width: 700px;
+        }
+        .boder img {
+            border: 5px solid #013e37;
+            border-radius: 3ch; 
+            margin-left: 25px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 20px 2px #013e37;
+        }
+        .boder p {
+            font-family: sans-serif;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            font-size: 35px;
+            margin-left: 70px;
+        }
+        .boder:hover {
+        box-shadow: 0 0 10px 2px blue;
+        transform: scale(1.07);
+        }
+    </style>
+    <header>
+        <p>
+        <span class="img-left"><img src="./img/logo/logo.jpg" style="width: 100px; position: relative; top: 15px; right: 500px; border: 2px solid black; border-radius: 5ch;">
+        </span><span style="margin-right: 80px; position: relative; bottom: 20px; ">🙏សូមស្វាគមន៏🙏</span>
+        </p>
+        <h6 style="position: relative; bottom: 95px; right: 620px; text-decoration: underline;">ជាសុខទី</h6>
+        <span class="img-right">
+            <img src="./img/logo/setec.jpg" width="100px" style="position: relative; bottom: 180px; left: 780px; border: 1px solid #013e37; border-radius: 2ch;">
+        </span>
+    </header>
+    <nav>
+        <a href="home.html"><b>Home </b></a>
+        <a href="food.html"><b>Food </b></a>
+        <a href="drink.html"><b>Drink </b></a>
+        <a href="about.html"><b>Contact </b></a>
+        <a href="home kh.html"><img src="./img/logo/flag kh.png" width="50px"></a>
+        <a href="home.html"><img src="./img/logo/flag eng.png" width="50px"></a>
+    </nav>     
+    <hr size="3px" style="margin-top: 10px;">
+        <div style="display: flex; justify-content: end; margin-right: 100px; margin-top: 50px; ">
+            <h1 style=" font-family: Playwrite GB J, cursive; margin-right: 200px; position: relative; font-size: 100px; text-align: start;">Sokty 
+            <span style="font-size: 20px; position: relative; top: 10px;"><br><h2>The Professional Rastuntrant 
+                <br> Internaltioal World cup Standard. 
+                <br> Get a Got Medal in 2026.</h2></span></h1>
+        <img src="./img/cover1.png" width="45%" style="border: 1px none black; border-radius: 20px;">
+        </div>
+    
+        <div class="container">
+        <div class="wrapper">
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/fb.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tiktok.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tg1.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/fb.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tiktok.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tg1.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/fb.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tiktok.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tg1.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/fb.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tiktok.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tg1.png" width="50px" style="margin-left: 20px;"></div>
+        </div>
+    </div>
+</body>
+</html>
