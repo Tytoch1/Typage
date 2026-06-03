@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rescale</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .bg {
+            position: relative;
+            top: 10px;
+            margin: 0 auto;
+            width: 300px;
+            justify-content: center;
+            height: auto;
+            border: 1px solid black;
+            box-shadow: 0 0 20px 2px black;
+            transition: box-shadow 0.2s ease;
+        }
+        .bg:hover {
+            box-shadow: 0 0 10px 5px blue;
+        }
+        .h11 {
+            font-family: sans-serif;
+            font-size: 25px;
+            text-align: center;
+        }
+        span {
+            display: flex;
+            text-align: center; 
+            font-size: 15px;
+            justify-content: center;
+            color: gray;
+        }
+            .star::before {
+                content: "\2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 ";
+                letter-spacing: 2px;
+                font-family: monospace; 
+                color: #333;
+            }
+            .star {
+                text-align: center;
+            }
+            .star1::before {
+                content: "\2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 \2605 ";
+                letter-spacing: 2px;
+                font-family: monospace; 
+                color: #333;
+            }
+            .star1 {
+                text-align: center;
+            }
+            .text1 {
+                text-align: start;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .text22 {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                display: flex;
+            }
+            .text-end {
+                text-align: end;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .text33 {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .text34 {
+                font-family: sans-serif;
+                text-align: right;
+            }
+            .img {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                position: relative; 
+                top: 400px;
+            }
+    </style>
+    <header class="bg">
+        <div style="margin-left: 0.6rem; margin-right: 0.9rem; margin-top: 1rem; margin-bottom: 0.5rem;">
+        <h1 class="h11">Chea Sokty <span>Address: Lorem ipum, 23-10</span><span>Telp. 11223344</span></h1>
+        <p class="star"></p>
+        <h3 style="font-family: sans-serif; text-align: center;"> CASH RECEIPT</h3>
+        <p class="star1"></p>
+        <div style="display: flex;">
+        <p class="text1"> Description <span style="color: gray; text-align: start; justify-content: flex-start;"> Lorem <br>ipsum <br>Doior sit amet <br> consentor <br>Adipiscing eilt</span></p>
+        <span style=" justify-content: space-between; color: black; text-align: end; position: relative; left: 150px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> <p>Price <br><span>1.1 <br> 2.2 <br> 3.3 <br> 4.4 <br> 5.5</span> </span></p>
+    </div>
+        <p class="star"></p>
+        <div style="display: flex; justify-content: space-between; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">
+            <h1>Total <br> <span style="text-align: start;">Cash <br> Change </span></h1>
+            <h1 style="font-size: 20px; position: relative; bottom: -7px;">16.5 <br> <span style="color: gray; text-align: end;">20.0 <br> 3.5 </span></h1>
+        </div>
+        <p class="star""></p>
+        <div style="display: flex; justify-content: space-between; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: gray">
+        <p>Bank card <br> Approval Code </p>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: right;">234 <br> #123456</p>
+    </div>
+        <p class="star"></p>
+        <div class="img">
+        <h2 style=" text-align: center; bottom: 390px; position: relative;">Thank you!</h2>
+        <img src="/img/qr.png" style="width: 130px; position: relative; bottom: 390px; left: 74px;">
+        </div>
+</div>
+</header>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+        <link rel="icon" href="/img/logo/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body { 
+            overflow-x: hidden;
+            background-image: url(./img/about/imagebgaba.png);
+            font-family: Kh Battambang;
+        }
+        header {
+            height: 120px;
+            font-family: Kh Battambang;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            background: #013e37;
+        }
+        nav{
+            margin-top: 20px;
+            justify-content: center;
+            font-size: 25px;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px auto 0 auto;   
+        }
+        nav {
+        border: 3px solid #013e37;
+        border-radius: 5ch;
+        background-color: #013e37;
+        width: 600px;
+        }
+        a img {
+            border: 1px hidden;
+            border-radius: 20ch;
+
+        }
+        nav a:hover {
+            color: #fff700;
+            transform: scale(1.09);
+        }
+        a { 
+            display: flex;
+            font-family: "Playwrite GB J", cursive;
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .img {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .img p {
+            font-size: 25px;
+            font-family: Cooper Black;
+            color: aliceblue;
+            background-color: #013e37;
+            border: 5px solid #013e37;
+            border-radius: 2ch;
+        }
+        .c-all {
+            display: flex;
+            margin: 110px 110px;
+        }
+        .c1{
+            padding: 20px;
+            margin: 0 auto;
+            display: flex;
+            margin-top: 20px;
+            border: 4px solid #013e37;
+            border-radius: 20px;
+            width: 83vh;
+            background-color: white;
+            box-shadow: 0 0 50px 0.5px #013e37;
+        }
+        .c2 {
+            padding: 20px;
+            margin: 0 auto;
+            display: flex;
+            margin-top: 20px;
+            border: 4px solid #013e37;
+            border-radius: 20px;
+            width: 83vh;
+            background-color: white;
+            box-shadow: 0 0 50px 0.5px #013e37;
+        }
+        .img-top img{
+            border: 5px hidden black;
+             border-radius: 30px; 
+             box-shadow: 0 0 15px 2px #013e37; 
+             position: relative; 
+             bottom: 10px; 
+             left: 10px;
+             position: fixed;
+        }
+        .img-top img:hover {
+            box-shadow: 0 0 15px 2px blue;
+            transform: scale(1.1);
+        }
+        @media (max-width: 1536px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .laptop-scale-wrapper {
+        transform-origin: top center;
+    }
+}
+
+/* Fixes for all mobile phone models and tablets */
+@media (max-width: 900px) {
+    body {
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+    }
+
+    /* Bypasses desktop wrapper constraints on phone screens */
+    .laptop-scale-wrapper {
+        transform: none !important;
+        width: 100% !important;
+    }
+
+    /* Resets header positions so text and logos don't fly off screen */
+    header {
+        height: auto !important;
+        padding: 15px !important;
+        font-size: 26px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    header p span img {
+        position: static !important;
+        margin-bottom: 10px;
+    }
+    header p span {
+        margin-right: 0 !important;
+        position: static !important;
+        display: block;
+    }
+    header h6 {
+        position: static !important;
+        font-size: 20px !important;
+        margin-top: 5px;
+        text-align: center !important;
+    }
+    header > img {
+        position: static !important;
+        margin-top: 10px;
+    }
+
+    /* Fits your navigation bar smoothly onto phone viewports */
+    nav {
+        width: 92% !important;
+        font-size: 16px !important;
+        flex-wrap: wrap !important;
+        padding: 10px !important;
+        border-radius: 2ch !important;
+        gap: 10px;
+    }
+    nav a img {
+        width: 35px !important;
+    }
+
+    /* Stacks your 2-column food layout rows into a single vertical stream */
+    .c-all {
+        flex-direction: column !important;
+        margin: 20px auto !important;
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    /* Transforms food menu item cards to be fully responsive */
+    .c1, .c2 {
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 400px;
+        align-items: center !important;
+        text-align: center !important;
+        margin-top: 0 !important;
+    }
+
+    /* Center-aligns menu item images inside cards */
+    .c1 img, .c2 img {
+        width: 100% !important;
+        max-width: 280px !important;
+        height: auto !important;
+    }
+
+    /* Calibrates relative typography gaps for phone displays */
+    .c1 span, .c2 span {
+        left: 0 !important;
+        top: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    /* Positions text blocks uniformly on small layouts */
+    .c1 span span, .c2 span span {
+        top: 10px !important;
+        margin-bottom: 15px;
+    }
+
+    /* Centers the custom green order button block */
+    .onder, .c1 span span span, .c2 span span span {
+        top: 15px !important;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    /* Repositions the "Back to Top" floating anchor button neatly */
+    .img-top img {
+        position: fixed !important;
+        bottom: 20px !important;
+        left: auto !important;
+        right: 20px !important;
+        z-index: 999;
+    }
+}
+    </style>
+    <header>
+        <a name="top"></a>
+        <p>
+        <span><img src="./img/logo/logo.jpg" style="width: 100px; position: relative; top: 15px; right: 500px; border: 2px solid black; border-radius: 5ch;">
+        </span><span style="margin-right: 80px; position: relative; bottom: 20px; ">🙏សូមស្វាគមន៏🙏</span>
+        </p>
+        <h6 style="position: relative; bottom: 95px; right: 620px; text-decoration: underline;">ជាសុខទី</h6>
+                <img src="./img/logo/setec.jpg" width="100px" style="
+        position: relative; bottom: 180px; left: 780px; border: 1px solid #013e37; border-radius: 2ch;">
+
+    </header>
+    <nav>
+        <a href="index.html">Home </a>
+        <a href="food.html"><b>Food </b></a>
+        <a href="drink.html"><b>Drink </b></a>
+        <a href="about.html"><b>Contact </b></a>
+        <a href="food-kh.html"><img src="./img/logo/flag kh.png" width="50px"></a>
+        <a href="food.html"><img src="./img/logo/flag eng.png" width="50px"></a>
+    </nav>        
+    </a>
+    <hr size="3px" style="margin-top: 10px;">
+    <div class="c-all">
+        <div class="c1">
+            <img src="./img/food/Berger 1.png" width="300px" height="350px" style=" border: 3px solid white; border-radius: 50px;">
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; position: relative; text-align: start; font-size: 20px; left: 50px; "><u>Burger Hub</u><br>
+                <span style="position: relative; top: 30px; font-family: cursive;">Ingredient:<br> Buns,Lettuce, ground beef,<br>Tomato,Cheese,Mayonnaise,<br>  Red onionpickles,Salt, <br>Smoked paprika,Pepper.<br>
+                <span class="onder" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; position: relative; top: 20px; border: 2px solid black; border-radius: 10px; width: 100px; height: 50px; background-color: #013e37; color: white;font-family: Kh Battambang;">Order Now!</span></span></span>
+        </div>
+                <div class="c2">
+            <img src="./img/food/Berger 1.png" width="300px" height="350px" style=" border: 3px solid white; border-radius: 50px;">
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; position: relative; text-align: start; font-size: 20px; left: 50px; "><u>Burger Hub</u><br>
+                <span style="position: relative; top: 30px; font-family: cursive;">Ingredient:<br> Buns,Lettuce, ground beef,<br>Tomato,Cheese,Mayonnaise,<br>  Red onionpickles,Salt, <br>Smoked paprika,Pepper.<br>
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; position: relative; top: 20px; border: 2px solid black; border-radius: 10px; width: 100px; height: 50px; background-color: #013e37; color: white;font-family: Kh Battambang;">Order Now!</span></span></span>
+        </div>
+    </div>
+    <div class="c-all">
+        <div class="c1">
+            <img src="./img/food/chicken.jpg" width="300px" height="350px" style="position: relative;  border: 3px solid white; border-radius: 50px;">
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; position: relative; text-align: start; font-size: 20px; left: 50px; "><u>Burger Hub</u><br>
+                <span style="position: relative; top: 30px; font-family: cursive;">Ingredient:<br> Buns,Lettuce, ground beef,<br>Tomato,Cheese,Mayonnaise,<br>  Red onionpickles,Salt, <br>Smoked paprika,Pepper.<br>
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; position: relative; top: 20px; border: 2px solid black; border-radius: 10px; width: 100px; height: 50px; background-color: #013e37; color: white;font-family: Kh Battambang;">Order Now!</span></span></span>
+                    </div>
+        <div class="c2">
+            <img src="./img/food/Berger 1.png" width="300px" height="350px" style=" border: 3px solid white; border-radius: 50px;">
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; position: relative; text-align: start; font-size: 20px; left: 50px; "><u>Burger Hub</u><br>
+                <span style="position: relative; top: 30px; font-family: cursive;">Ingredient:<br> Buns,Lettuce, ground beef,<br>Tomato,Cheese,Mayonnaise,<br>  Red onionpickles,Salt, <br>Smoked paprika,Pepper.<br>
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; position: relative; top: 20px; border: 2px solid black; border-radius: 10px; width: 100px; height: 50px; background-color: #013e37; color: white;font-family: Kh Battambang;">Order Now!</span></span></span>
+        </div>
+    </div>
+    <div class="c-all">
+        <div class="c1">
+            <img src="./img/food/poster menu.jpg" width="300px" height="350px" style="position: relative;  border: 3px solid white; border-radius: 50px;">
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; position: relative; text-align: start; font-size: 20px; left: 50px; "><u>Burger Hub</u><br>
+                <span style="position: relative; top: 30px; font-family: cursive;">Ingredient:<br> Buns,Lettuce, ground beef,<br>Tomato,Cheese,Mayonnaise,<br>  Red onionpickles,Salt, <br>Smoked paprika,Pepper.<br>
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; position: relative; top: 20px; border: 2px solid black; border-radius: 10px; width: 100px; height: 50px; background-color: #013e37; color: white;font-family: Kh Battambang;">Order Now!</span></span></span>
+        </div>
+        <div class="c2">
+            <img src="./img/food/Berger 1.png" width="300px" height="350px" style=" border: 3px solid white; border-radius: 50px;">
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; position: relative; text-align: start; font-size: 20px; left: 50px; "><u>Burger Hub</u><br>
+                <span style="position: relative; top: 30px; font-family: cursive;">Ingredient:<br> Buns,Lettuce, ground beef,<br>Tomato,Cheese,Mayonnaise,<br>  Red onionpickles,Salt, <br>Smoked paprika,Pepper.<br>
+                <span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; position: relative; top: 20px; border: 2px solid black; border-radius: 10px; width: 100px; height: 50px; background-color: #013e37; color: white;font-family: Kh Battambang;">Order Now!</span></span></span>
+        </div>
+    </div>
+    <div class="img-top">
+        <a href="#top">
+            <img src="./img//about/top.png" width="50px">
+        </a>
+    </div>
+</body>
+</html>

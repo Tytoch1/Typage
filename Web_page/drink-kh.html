@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ភេសជ្ចះ</title>
+</head>
+<body>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow: hidden;
+             background-image: url(./img/about/imagebgaba.png);
+            font-family: Kh Battambang;
+        }
+        header {
+            height: 120px;
+            font-family: Kh Battambang;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            background-color: #013e37;
+        }
+        nav{
+            margin-top: 20px;
+            justify-content: center;
+            font-size: 25px;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px auto 0 auto;   
+        }
+        nav {
+        border: 3px solid #013e37;
+        border-radius: 5ch;
+        background-color: #013e37;
+        width: 600px;
+        }
+        nav a:hover {
+            color: #fff700;
+            transform: scale(1.1);
+        }
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+        a img {
+            position: relative; 
+            top: 6px;
+            border: 1px hidden;
+            border-radius: 20ch;
+        }
+        .warrpper {
+            display: inline-flex;
+            align-items: center;
+            width: max-content;
+            animation: scroll 60s linear infinite;
+            gap: 50px;
+            border: 3px solid #013e37;
+            backdrop-filter: blur(2px);
+
+        }
+        @keyframes scroll {
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        @media (max-width: 1536px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .laptop-scale-wrapper {
+        transform-origin: top center;
+    }
+}
+
+/* Fixes for all mobile phone models and tablets */
+@media (max-width: 900px) {
+    body {
+        /* Prevents clipping layout fields out of reach on small touch displays */
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+    }
+
+    /* Bypasses desktop wrapper limits on small touch screens */
+    .laptop-scale-wrapper {
+        transform: none !important;
+        width: 100% !important;
+    }
+
+    /* Resets fixed header text metrics and alignment streams */
+    header {
+        height: auto !important;
+        padding: 15px !important;
+        font-size: 26px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    header p span img {
+        position: static !important;
+        margin-bottom: 10px;
+    }
+    header p span {
+        margin-right: 0 !important;
+        position: static !important;
+        display: block;
+    }
+    header h6 {
+        position: static !important;
+        font-size: 20px !important;
+        margin-top: 5px;
+        text-align: center !important;
+    }
+    header > img {
+        position: static !important;
+        margin-top: 10px;
+    }
+
+    /* Scales down global menu navigations to wrap securely */
+    nav {
+        width: 92% !important;
+        font-size: 16px !important;
+        flex-wrap: wrap !important;
+        padding: 10px !important;
+        border-radius: 2ch !important;
+        gap: 10px;
+    }
+    nav a img {
+        width: 35px !important;
+        top: 0 !important;
+    }
+
+    /* Neutralizes major pixel alignment shifts for small screens */
+    div[style*="display: flex"] {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    div[style*="text-align: center"] {
+        width: 100% !important;
+        padding: 0 10px;
+    }
+
+    /* Drops extreme layout positioning from the local price tracker field */
+    div[style*="text-align: center"] p[style*="position: relative"] {
+        position: static !important;
+        width: 90% !important;
+        max-width: 320px;
+        margin: 25px auto !important;
+        font-size: 20px !important;
+    }
+
+    /* Normalizes carousel viewport slider parameters on mobile */
+    .container {
+        width: 100% !important;
+        overflow-x: auto !important;
+        padding: 10px 0;
+    }
+
+    .warrpper {
+        gap: 20px !important;
+    }
+
+    .warrpper img {
+        width: 200px !important;
+        height: auto !important;
+    }
+    
+    /* Safely handles fixed-height image containers */
+    .warrpper img[height="425px"] {
+        width: 200px !important;
+        height: 283px !important;
+    }
+}
+    </style>
+
+    <header>
+        <p>
+        <span><img src="./img/logo/logo.jpg" style="width: 100px; position: relative; top: 15px; right: 500px; border: 2px solid black; border-radius: 5ch;">
+        </span><span style="margin-right: 80px; position: relative; bottom: 20px; ">🙏សូមស្វាគមន៏🙏</span>
+        </p>
+        <h6 style="position: relative; bottom: 95px; right: 620px; text-decoration: underline;">ជាសុខទី</h6>
+                <img src="./img/logo/setec.jpg" width="100px" style="
+        position: relative; bottom: 180px; left: 780px; border: 1px solid #013e37; border-radius: 2ch;">
+
+    </header>
+    <nav>
+        <a href="home-kh.html">ទំព័រដើម </a>
+        <a href="food-kh.html">អាហារ </a>
+        <a href="drink-kh.html">ភេសជ្ចះ </a>
+        <a href="about-kh.html">ទំនាក់ទនង  </a>
+        <a href="drink-kh.html"><img src="./img/logo/flag kh.png" width="50px"></a>
+        <a href="drink.html"><img src="./img/logo/flag eng.png" width="50px"></a>
+
+    </nav>        
+    </a>
+    <hr size="3px" style="margin-top: 10px;">
+    <div style="display: flex; justify-content: space-evenly;">
+        <div style="text-align: center; font-size: 25px;">
+            <p style="position: relative;  right: 870px;  top: 500px; font-family: Kh Battambang; border: 5px solid #013e37; 
+            width: 500px; margin: 0 auto; color: aliceblue; background-color: #013e37; border-radius: 2ch;"> 
+                ទាំងអស់តម្លៃ​ ១០០០០៛</p>
+    <div class="container">
+    <div class="warrpper">
+    <img src="./img/drink/Poster 2.png" width="300px">
+    <img src="./img/drink/Brown suger.jpg" width="300px">
+    <img src="./img/drink/Chocolate.jpg" width="300px">
+    <img src="./img/drink/Starbucks solo.jpg" width="300px" height="425px">
+    <img src="./img/drink/Poster cafe 1.png" width="300px">
+    <img src="./img/drink/Poster 2.png" width="300px">
+    <img src="./img/drink/Brown suger.jpg" width="300px">
+    <img src="./img/drink/Chocolate.jpg" width="300px">
+    <img src="./img/drink/Starbucks solo.jpg" width="300px" height="425px">
+    <img src="./img/drink/Poster cafe 1.png" width="300px">
+    </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+</html>

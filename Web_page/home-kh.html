@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="/img/logo/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow-x: hidden;
+            background-image: url(./img/about/imagebgaba.png);
+            font-family: Kh Battambang;
+        }
+        header {
+            height: 120px;
+            font-family: Kh Battambang;
+            font-size: 50px;
+            color: aliceblue;
+            text-align: center;
+            background-color: #013e37;
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            .img-righ h6 {
+                text-align: center;
+            }
+        }
+
+        nav{
+            justify-content: center;
+            font-size: 25px;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px auto 0 auto;   
+        }
+        nav {
+        border: 3px solid #013e37;
+        border-radius: 5ch;
+        background-color: #013e37;
+        height: 55px;
+        width: 600px;
+        }
+        nav a:hover {
+            color: #fff700;
+            transform: scale(1.09);
+        }
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+        a img {
+            position: relative; 
+            top: 6px;
+            border: 1px hidden;
+            border-radius: 20ch;
+
+        }
+        .container {
+            font-family: sans-serif;
+            color: aliceblue;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+            border: 5px solid black;
+            top: 75px;
+            background-color: #013e37;
+            mask-image: linear-gradient(
+                to right, 
+                transparent,
+                #000 5%,
+                #000 95%,
+                transparent
+            )
+        }
+        .wrapper {
+            display: inline-flex;
+            align-items: center;
+            width: max-content;
+            animation: scroll 10s linear infinite;
+        }
+        @keyframes scroll {
+            to{
+                transform: translateX(-50%);
+            }
+        }
+                .wrapper img {
+            border: 1px none black;
+            border-radius: 50px;
+        }
+
+        .logo {
+            flex-shrink: 0;
+            margin-right: 2rem;
+        }
+        .logo img{
+            opacity: 0.8;
+        }
+        .boder {
+            top: 35px;
+            display: flex;
+            position: relative;
+            border:  4px solid #013e37;
+            box-shadow: 0 0 25px 2px #013e37;
+            margin: 0 auto;
+            width: 700px;
+        }
+        .boder img {
+            border: 5px solid #013e37;
+            border-radius: 3ch; 
+            margin-left: 25px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 20px 2px #013e37;
+        }
+        .boder p {
+            font-family: sans-serif;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            font-size: 35px;
+            margin-left: 70px;
+        }
+        .boder:hover {
+        box-shadow: 0 0 10px 2px blue;
+        transform: scale(1.07);
+        }
+@media (max-width: 1536px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .laptop-scale-wrapper {
+        transform-origin: top center;
+    }
+}
+
+/* Fixes for all phone models and tablets */
+@media (max-width: 900px) {
+    body {
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+    }
+    
+    /* Disables desktop scale logic on mobile views */
+    .laptop-scale-wrapper {
+        transform: none !important;
+        width: 100% !important;
+    }
+
+    /* Resets fixed header offsets so text and logos don't fly off phone screens */
+    header {
+        height: auto !important;
+        padding: 15px !important;
+        font-size: 26px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    header p span img {
+        position: static !important;
+        margin-bottom: 10px;
+    }
+    header p span {
+        margin-right: 0 !important;
+        position: static !important;
+        display: block;
+    }
+    header h6 {
+        position: static !important;
+        font-size: 20px !important;
+        margin-top: 5px;
+        text-align: center !important;
+    }
+    header > img {
+        position: static !important;
+        margin-top: 10px;
+    }
+
+    /* Adapts navigation bar width to map neatly on small phone widths */
+    nav {
+        width: 92% !important;
+        height: auto !important;
+        font-size: 16px !important;
+        flex-wrap: wrap !important;
+        padding: 10px !important;
+        border-radius: 2ch !important;
+        gap: 10px;
+    }
+    nav a img {
+        width: 35px !important;
+        top: 0 !important;
+    }
+
+    /* Arranges the main hero text and display banner vertically on mobile */
+    div[style*="display: flex"] {
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+        margin-right: 0 !important;
+        margin-top: 30px !important;
+        padding: 0 15px;
+    }
+    div[style*="display: flex"] h1 {
+        font-size: 42px !important;
+        margin-right: 0 !important;
+        text-align: center !important;
+        margin-top: 20px;
+    }
+    div[style*="display: flex"] h1 span {
+        position: static !important;
+    }
+    div[style*="display: flex"] h1 h2 {
+        font-size: 16px !important;
+        line-height: 1.6;
+        margin-top: 10px;
+    }
+    div[style*="display: flex"] img {
+        width: 90% !important;
+    }
+    
+    /* Cleans up the ticker position container */
+    .container {
+        top: 40px !important;
+        margin-bottom: 60px;
+    }
+    
+    /* Adjusts custom border layout block if used on phone viewports */
+    .boder {
+        top: 15px !important;
+        width: 90% !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+    }
+    .boder img {
+        margin-left: 0 !important;
+    }
+    .boder p {
+        margin-left: 0 !important;
+        font-size: 22px !important;
+        padding-bottom: 20px;
+    }
+}  
+    </style>
+    <header>
+        <p>
+        <span><img src="./img/logo/logo.jpg" style="width: 100px; position: relative; top: 15px; right: 500px; border: 2px solid black; border-radius: 5ch;">
+        </span><span style="margin-right: 80px; position: relative; bottom: 20px; ">🙏សូមស្វាគមន៏🙏</span>
+        </p>
+        <h6 style="position: relative; bottom: 95px; right: 620px; text-decoration: underline;">ជាសុខទី</h6>
+        <img src="./img/logo/setec.jpg" width="100px" style="
+        position: relative; bottom: 180px; left: 780px; border: 1px solid #013e37; border-radius: 2ch;">
+    </header>
+    <nav>
+        <a href="home-kh.html">ទំព័រដើម </a>
+        <a href="food-kh.html">អាហារ </a>
+        <a href="drink-kh.html">ភេសជ្ចះ </a>
+        <a href="about-kh.html">ទំនាក់ទនង  </a>
+        <a href="home-kh.html"><img src="./img/logo/flag kh.png" width="50px"></a>
+        <a href="index.html"><img src="./img/logo/flag eng.png" width="50px"></a>
+    </nav>     
+    <hr size="3px" style="margin-top: 10px;">
+        <div style="display: flex; justify-content: end; margin-right: 100px; margin-top: 50px; ">
+            <h1 style=" font-family: Khmer OS Muol; margin-right: 70px; position: relative; font-size: 100px; text-align: start;">សុខទី 
+            <span style="font-size: 20px; position: relative; bottom: 20px;"><br><h2>ភោជនីយដ្ឋានជំនាញ
+                <br> ស្តង់ដារ​ការ​ប្រកួត​បាល់​ទាត់​ពិភព​លោក​ផ្ទៃក្នុង
+                <br> ទទួលបានមេដាយនៅឆ្នាំ 2026 ។</h2></span></h1>
+        <img src="./img/cover1.png" width="45%" style="border: 1px none black; border-radius: 20px;">
+        </div>
+    
+        <div class="container">
+        <div class="wrapper">
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/fb.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tiktok.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tg1.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/fb.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tiktok.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tg1.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/fb.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tiktok.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tg1.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/fb.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tiktok.png" width="50px" style="margin-left: 20px;"></div>
+            <h1>Contect Me Now Heaty</h1>
+            <div class="logo"><img src="./img/logo/tg1.png" width="50px" style="margin-left: 20px;"></div>
+        </div>
+    </div>
+</body>
+</html>
